@@ -17,14 +17,26 @@
 }
 
 .jumbotron {
+    
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background: #d83636;
+    background-image: url(../Images/rsz_library_wikimedia.png);
+    background-size: cover;
     color:floralwhite;
+    
 }
 
 address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     background-color: #b71703;
 }
