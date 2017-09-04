@@ -28,11 +28,12 @@
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./coursesfaculty.html"><span class="fa fa-book fa-lg"></span> Courses and Faculty</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>      
             </div>
         </div>
     </nav>
+    
 
     <header class="jumbotron">
         <div class="container">
@@ -52,6 +53,54 @@
     </header>
 
     <div class="container">
+        
+        <div class="row row-content">
+            <div class="col">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="Images/hexify.png" alt="Hexify">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Hexify <span class="badge badge-primary">NEW</span></h2>
+                                <p class="hidden-xs-down">
+                                    A 6-month duration course that covers Boards syllabus as well as the competitive syllabus for IIT-JEE exam.<br>
+                                    Course starting on October 1, 2017.
+                                </p>
+                            </div> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="Images/scholaship.jpg" alt="Scholaria">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Scholaria</h2>
+                                <p class="hidden-xs-down">
+                                    The scholarship is provided to the top 20 rank holders in the Scholarship exam, <em>Scholaria</em>, to be held on coming sunday viz. September 10, 2017.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="Images/sangharsh.jpg" alt="Sangharsh">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Sangharsh, Bombay</h2>
+                                <p class="hidden-xs-down">
+                                    Our Bombay Centre <em>Sangharsh</em> will be inaugurated this December by Professor Vivek Agnihotri, Chairman of Indian Institute of Technology, Bombay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div> 
+            </div>
+        </div>
         
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
@@ -116,7 +165,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
                         <li><a href="./coursesfaculty.html">Courses and Faculty</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 offset-1 col-sm-5">
@@ -153,6 +202,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myCarousel").carousel( { interval: 2000 } );
+        });
+    </script>
 </body>
 
 </html>

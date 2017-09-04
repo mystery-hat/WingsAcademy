@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
     <link href="css/customStyles.css" rel="stylesheet">
-    <title>Wings Academy: About Us</title>
+    <title>Wings Academy: Courses and Faculty</title>
 
 </head>
 
@@ -30,11 +30,80 @@
                     <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-book fa-lg"></span> Courses and Faculty</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>      
             </div>
         </div>
     </nav>
+    
+    <div id="enrollmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Enroll in the Course</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">Subjects</label>
+                            <div class="col-md-10">
+                                <label class="custom-control custom-radio">
+                                <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Physics</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Chemistry</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                <input id="radio3" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Maths</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                  <input id="radio4" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">All</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label">Level</label>
+                            <div class="btn-group col-md" data-toggle="buttons">
+                              <label class="btn btn-primary btn-sm active">
+                                <input type="radio" autocomplete="off" checked> Matriculate
+                              </label>
+                              <label class="btn btn-info btn-sm">
+                                <input type="radio" autocomplete="off"> Above Matriculate
+                              </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                        <label class="col-md-2 col-form-label">Session</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row form-group">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-warning">Enroll</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -55,6 +124,10 @@
 
     <div class="container">
         <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Courses and Faculty</li>
+            </ol>
             <div class="col">
                <h3>Courses and Faculty</h3>
                <hr>
@@ -95,7 +168,7 @@
                         <p>
                             The Annumate(+1) Course is a course of 12-months duration for class 11th students. The course aims at completing the class 11th Boards Syllabus as well as the Competitive Syllabus. All the matriculate students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-success">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-success enroll">Enroll</a>
                     </div>
                     
                     <div role="tabpanel" class="tab-pane fade" id="course1b">
@@ -104,7 +177,7 @@
                         <p>
                             The Hexify-A Course is a course of 6-months duration for class 11th students. The course aims at completing the class 11th Boards Syllabus as well as the Competitive Syllabus in limited time. All the matriculate students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-info">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-info enroll">Enroll</a>
                     </div>
                     
                     <div role="tabpanel" class="tab-pane fade" id="course1c">
@@ -113,7 +186,7 @@
                         <p>
                             The Triode(I) Course is a course of 3-months duration for class 11th students. The course classes are held in the vacation months, viz. June, July and December. This course is meant for students whose aim is Boards Exams and not Competitive Exams. All the matriculate students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-warning">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-warning enroll">Enroll</a>
                     </div>
                     
                     <div role="tabpanel" class="tab-pane fade" id="course1d">
@@ -122,7 +195,7 @@
                         <p>
                             The Apparate Course is a course of 1-month duration for class 11th students. The course classes are held in the month of January. This course is meant for those students who want to either augment their learning of Board syllabus or want to brush up their learning. All the matriculate students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-danger">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-danger enroll">Enroll</a>
                     </div>
     
                 </div>
@@ -163,7 +236,7 @@
                         <p>
                             The Annumate(+2) Course is a course of 12-months duration for class 12th students. The course aims at completing the class 12th Boards Syllabus as well as the Competitive Syllabus. All the Class 11th qualified students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-success">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-success enroll">Enroll</a>
                     </div>
                     
                      <div role="tabpanel" class="tab-pane fade" id="course2b">
@@ -172,7 +245,7 @@
                         <p>
                             The Hexify-B Course is a course of 6-months duration for class 12th students. The course aims at completing the class 11th Boards Syllabus as well as the Competitive Syllabus in limited time. All the Class 11th qualified students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-info">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-info enroll">Enroll</a>
                     </div>
                     
                      <div role="tabpanel" class="tab-pane fade" id="course2c">
@@ -181,7 +254,7 @@
                         <p>
                             The Triode(II) Course is a course of 3-months duration for class 12th students. The course classes are held in the vacation months, viz. June, July and December. This course is meant for students whose aim is Boards Exams and not Competitive Exams. All the Class 11th qualified students are eligible for taking this course.
                         </p>
-                        <a href="#" class="btn btn-sm btn-warning">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-warning enroll">Enroll</a>
                     </div>
                     
                      <div role="tabpanel" class="tab-pane fade" id="course2d">
@@ -190,7 +263,7 @@
                         <p>
                             The Teleport Course is a course of 2-months duration for class 12th students. The course classes are held in the months of January and February. This course is meant for those students who want to either augment their learning of Board syllabus or want to brush up their learning. All the Class 11th qualified students are eligible for taking this course. A must take course for all JEE aspirants.
                         </p>
-                        <a href="#" class="btn btn-sm btn-danger">Enroll</a>
+                        <a href="#" class="btn btn-sm btn-danger enroll">Enroll</a>
                     </div>
     
                 </div>
@@ -209,7 +282,7 @@
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Courses and Faculty</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 offset-1 col-sm-5">
@@ -247,7 +320,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <script>
+        $(document).ready(function(){
+            $(".enroll").click(function(){
+                $("#enrollmodal").modal("toggle");
+            });
+        });
+       
+    </script>
 </body>
 
 </html>
