@@ -1,0 +1,10 @@
+const express=require("express")
+const path=require("path")
+const server=express()
+server.use(express.json())
+server.use(express.urlencoded({extended:true}))
+server.use("/",express.static(path.join(__dirname,"public")))
+server.use("/api",require("./routes/api").route)
+server.listen(1111,()=>{
+    console.log("Server started at: http://localhost:1111")
+})
