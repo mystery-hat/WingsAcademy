@@ -15,7 +15,7 @@
     <link href="css/customStyles.css" rel="stylesheet">
     <!-- endbuild -->
     <title>Wings Academy: Contact Us</title>
-
+    
 </head>
 
 <body>
@@ -141,14 +141,14 @@
                     <div class="form-group row">
                         <div class="form-check col-md-6 offset-md-2">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="approve" value="">
+                                <input type="checkbox" id="allowcontact" class="form-check-input" name="approve" value="">
                                 <strong>May we contact you?</strong>
                             </label>
                         </div>
                         <div class="col-md-3 offset-md-1">
-                         <select class="form-control">
-                            <option>Tel.</option>
-                            <option>Email</option>
+                         <select id="prefferedcontact" class="form-control">
+                            <option id="option1">Tel.</option>
+                            <option id="option2">Email</option>
                          </select>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            <button id="btn" type="submit" class="btn btn-primary">Send Feedback</button>
                         </div>
                     </div>
                 </form>
@@ -218,6 +218,11 @@
     <script src="css/jquery/dist/jquery.min.js"></script>
     <script src="css/tether/dist/js/tether.min.js"></script>
     <script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
     <!-- endbuild -->
 </body>
 

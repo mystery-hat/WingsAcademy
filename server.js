@@ -7,4 +7,4 @@ server.use("/",express.static(path.join(__dirname,"public")))
 server.use("/api",require("./routes/api").route)
 server.listen(1111,()=>{
     console.log("Server started at: http://localhost:1111")
-}) 
+})
